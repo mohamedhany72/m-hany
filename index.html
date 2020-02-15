@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M.Hany</title>
+    <link rel="icon" href="images/mh-logo.png" type="image/x-icon">
+    <!--google foonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <!--bootstrap cdn-->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--main style sheet-->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="menu-top">
+        <div class="containerer">
+            <a href="#"><img src="images/mh-logo.png" alt="logo" class="nav-img"></a>
+            <nav class="nav-2">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link " data-text="projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-text="about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clients" class="nav-link" data-text="clients">clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link" data-text="pricing">pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-text="contact">contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="portfolio" role="button">Portfolio</a>  
+            </nav>
+            <!--hamburger menu-->
+            <div class="menu-btn"  role="button">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-1"> <!--for design purposes-->
+        <a href="#" class="brand">
+            <img src="images/mh-logo2.png" alt="logo">
+        </a>
+        <ul>
+            <li class="nav-itme">
+                <a href="#projects" class="nav-link" data-text="projects">projects</a>
+            </li>
+            <li class="nav-itme">
+                <a href="#about" class="nav-link" data-text="about">about</a>
+            </li>
+            <li class="nav-itme">
+                <a href="#clients" class="nav-link" data-text="clients">clients</a>
+            </li>
+            <li class="nav-itme">
+                <a href="#pricing" class="nav-link" data-text="pricing">pricing</a>
+            </li>
+            <li class="nav-itme">
+                <a href="#contact" class="nav-link" data-text="contact">contact</a>
+            </li>
+        </ul>
+        <a href="#" class="portfolio" role="button">Portfolio</a>  
+    </nav>
+    <!--en of nav bar -->
+
+    <header>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-2">
+                    <div class="slide-2-styling"></div>
+                    <div class="container-lg">
+                        <div class="row justify-content-between">
+                            <div class="header-img col-lg-5 order-last">
+                                <img src="images/me-in-blue-2.png" alt="Mohamed Hany" class="m-hany">
+                            </div>
+                            <div class="content col-lg-5 order-first">
+                                <div class="position-header">
+                                    <span>Hello, I'm</span>
+                                    <h1 class="display-4">Mohamed Hany</h1>
+                                    <p>A creative freelance front-end, UI & UX designer</p>
+                                </div>
+                                <div class="hire-me-top">
+                                    <button class="hire-me">Hire Me</button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>       
+                </div>
+                <div class="swiper-slide slide-1">
+                    <!--three.js code-->
+                    <div id="canvas"></div>
+                    <div class="contaianer-lg">
+                        <div class="row justify-content-center">
+                            <img src="images/mohamed-hany-logo2.png" alt="logo" >
+                            <div class="hire-me-top">
+                                <button class="hire-me">Hire Me</button>
+                            </div>
+                            <!-- <div class="content col-lg-4">
+                                <div class="position-header">
+                                    <h1 class="display-4">M.HANY</h1>
+                                    <p>Web Designer and Developer</p>
+                                </div>
+                                <div class="hire-me-top">
+                                    <button class="hire-me">Hire Me</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-3">
+                    <video id="videoBG"  autoplay muted loop poster="images/Blurred-Video-of-Scripts-Being-Typed7640.png">
+                    <source src="videos/Blurred-Video-of-Scripts-Being-Typed.mp4" type="video/mp4">
+                    </video>
+                    <div class="blured">
+                        <p><span>My code</span> is creative & will make your life easier as it's clean, human readible & easy to be eddited </p>
+                    </div>
+                    <div class="content">
+                        <button class="hire-me">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!--end swiper-->
+    </header>
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <!--accessible-->
+            <div class="accessible">
+                <div class="containerer">
+                    <div class="row justify-p justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <h3>Accessible Code</h3>
+                            <p>I write accessible code which make your site availble for the world's 750 million disabled people by writting a symantic code.</p>
+                            <p>Increase your visitors by increasing the rate of your site on search engines; since the robots of saerch engines are included with the web's blind population</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/Accessible.png" class="projects-image" alt="accessibility img">
+                            <div class="row justify-content-center align-items-center tested-code">
+                                <h4 class="col-12 col-md-4">Code is Tested Using</h4>
+                                <img src="images/w3c-logo-world-wide-web.png" class="col-5 col-md-2" alt="w3c logo">
+                                <img src="images/wavelogo2.png" class="col-5 col-md-3" alt="wave web accessibility tool logo">   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--responsive-->
+            <div class="responsive">
+                <div class="containerer">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-md-last justify-p">
+                            <h3>Awsome responsive look</h3>
+                            <p>We live in a multi-screen society. Because of this, it’s important for your site to be viewable across as many devices as possible, because you never know what device someone will be using to view your website.</p>
+                            <p>Responsive design can help you solve a lot of problems for your website. It will make your site mobile-friendly, improve the way it looks on devices with both large and small screens, and increase the amount of time that visitors spend on your site. It can also help you improve your rankings in search engines.</p>
+                        </div>
+                        <div class="col-md-6 order-md-first">
+                            <img src="images/responsive.png" class="projects-image" alt="responsiveness image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--interactive-->
+            <div class="interactive" id="interactive">
+                <div class="containerer">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 justify-p">
+                            <h3>The Power of java-script</h3>
+                            <p>Add a huge interactivity to your site by using javaScript as with this language the look of your site wull have no limits.</p>
+                            <p>I use jQuery and I love sometimes to get my hands dirty with Three.js</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/js.png" class="projects-image" alt="responsiveness image">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="cursor"></div> -->
+            </div>
+            <div class="some-projects">
+                <h3>Some Of My Projects</h3>
+                <div class="containerer">
+                    <div class="project project-1">
+                        <figure class="project-fig"><img src="images/project-1.jpg" alt="s;ick-app"/>
+                            <figcaption>
+                              <h4>Slick App</h4>
+                              <button class="project-button">Visit</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+
+                    <div class="project project-2" id="project-2">
+                        <figure class="project-fig"><img src="images/project-2.jpg" alt="portfolio-app"/>
+                            <figcaption>
+                              <h4>Portfolio</h4>
+                              <button class="project-button">Visit</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                        
+                    <div class="project project-3">
+                        <figure class="project-fig"><img src="images/project-3.jpg" alt="dimension"/>
+                            <figcaption>
+                              <h4>Dimension</h4>
+                              <button class="project-button">Visit</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="containerer">
+                <figure id="about-figure">
+                    <img src="images/me-bakcground.jpg" alt="Mohamed Hany">
+                    <figcaption class="sr-only sr-only-focusable">
+                        Mohamed Hany
+                    </figcaption>
+                </figure>
+                <p>
+                    Hi, my name is Mohamed Hany, UI, UX & front end web designer from Egypt. I love designing web sites and sometimes I love to get my hands dirty with logo design and pictures editing. I’m very good at writing semantic HTML5 markup, CSS & JavaScript code and I use libraries as Bootstrap & jQuery with some knowledge about Three.JS.   
+                </p>
+                <p>
+                    I’m a self-learner and I first learn to code at Udacity in 1 Million Arab Coders Initiative and complete two courses “Front End Web Development” and “Full Stack Web Development” then I took “Web Design for Everybody (Basics of Web Development and Coding) Specialization” at Coursera, offered by University of Michigan, which made me understand the importance of accessibility and wireframes and how to write clean code and check it. Now I’m locking to improve my skills in front end web design and learning back end web development.
+                </p>
+                <img src="images/me-black&white.png" class="about-background-image" alt="Mohamed Hany">
+                <div class="social-icons">
+                    <h3>follow me on social media</h3>
+                    <div class="social-icons-alignment">
+                        <!-- <a href="#"><i class="fab fa-yahoo"></i><span class="sr-only sr-only-focusable">yahoo</span></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i><span class="sr-only sr-only-focusable">what's app</span></a> -->
+                        <a href="#"><i class="fab fa-twitter"></i><span class="sr-only sr-only-focusable">twitter</span></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i><span class="sr-only sr-only-focusable">facebook</span></a>
+                        <a href="#"><i class="fab fa-instagram"></i><span class="sr-only sr-only-focusable">instagram</span></a>
+                        <a href="#"><i class="fab fa-github"></i><span class="sr-only sr-only-focusable">github</span></a>
+                        <a href="#"><i class="fab fa-linkedin"></i><span class="sr-only sr-only-focusable">linkedin</span></a>
+                    </div>
+                </div>
+                <div class="about-buttons">
+                    <button class="hire-me">Hire Me</button>
+                    <button class="hire-me">My CV</button>
+                </div>
+            </div>
+            
+        </section>
+        <section id="clients">
+            <h2>What my Clients say</h2>
+            <div class="containerer">
+                
+                <div class="client-card">
+                    <figure class="clients-figure">
+                        <img class="client-image rounded-circle cropped2" src="images/clients/pexels-photo-1024311.jpeg" alt="client 1">
+                        <figcaption>Name</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam assumenda labore tenetur ad mollitia consequatur repellat nemo aspernatur! Voluptas.</p>
+                </div>
+                <div class="client-card">
+                    <figure class="clients-figure">
+                        <img class="client-image rounded-circle cropped2" src="images/clients/pexels-photo-1427889.jpeg" alt="client 1">
+                        <figcaption>Name</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam assumenda ipsum dolor sit amet consectetur adipisicing elit. Culpa nam assumenda ipsum dolor sit amet consectetur adipisicing elit. Culpa nam assumenda  labore tenetur ad mollitia consequatur repellat nemo aspernatur! Voluptas.</p>
+                </div>
+                <div class="client-card">
+                    <figure class="clients-figure">
+                        <img class="client-image rounded-circle cropped2" src="images/clients/pexels-photo-1472761.jpeg" alt="client 1">
+                        <figcaption>Name</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam assumenda labore tenetur ad mollitia consequatur repellat nemo aspernatur! Voluptas.</p>
+                </div>
+                <!-- <div class="client-card">
+                    <figure class="clients-figure">
+                        <img class="client-image rounded-circle cropped2" src="images/clients/pexels-photo-769730.jpeg" alt="client 1">
+                        <figcaption>Name</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam assumenda labore tenetur ad mollitia consequatur repellat nemo aspernatur! Voluptas.</p>
+                </div> -->
+                <div class="separating-line"></div>
+            </div>
+        </section>
+        <section id="pricing">
+            <h2>My Prices</h2>
+            <p>Choose a Plan That Fits Your Project</p>
+            <div class="containerer">
+                <div class="radio-button">
+                    <input type="radio" id="basic-radio-button" name="table" value="basic">
+                    <label for="basic-radio-button">Basic</label>
+                    <input type="radio" id="standard-radio-button" name="table" value="standard" checked>
+                    <label for="standard-radio-button">Standard</label>
+                    <input type="radio" id="premium-radio-button" name="table" value="premium">
+                    <label for="premium-radio-button">Premium</label>
+                </div>
+                <div class="table-group">
+                    <!--basic table-->
+                    <table class="pricing-table" id="basic">
+                        <caption class="sr-only sr-only-focusable">Basic</caption>
+                        <thead>
+                            <tr class="table-title">
+                               <th colspan="2">Basic</th>
+                            </tr>
+                            <tr class="table-subtitle">
+                                <th colspan="2">Simple & attractive website</th>
+                            </tr>
+                            <tr class="plan-description">
+                                <th colspan="2">One page responsive website with many features</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-cell-right">
+                                <th>Accessibility</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Responsive Design</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>design customization</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Content Upload</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-false">
+                                <th>E-Commerce Functionality</th>
+                                <td><i class="fas fa-times"></i><span class="sr-only sr-only-focusable">not availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Plugins</th>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr class="cell-number">
+                                <th>Number of Pages</th>
+                                <td>1</td>
+                            </tr>
+                            <tr class="cell-number">
+                                <th>Revisions</th>
+                                <td>2</td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Delivery Time</th>
+                                <td>7 days</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="table-button"><span>BUY</span><i class="fas fa-shopping-cart"></i></button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <!--standard table-->
+                    <table class="pricing-table active-table" id="standard">
+                        <caption class="sr-only sr-only-focusable">standard</caption>
+                        <thead>
+                            <tr class="table-title">
+                                <th colspan="2">standard</th>
+                             </tr>
+                             <tr class="table-subtitle">
+                                 <th colspan="2">Business Website</th>
+                             </tr>
+                             <tr class="plan-description">
+                                 <th colspan="2">Outstanding website up to 5 informational pages</th>
+                             </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-cell-right">
+                                <th>Accessibility</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">avaliable</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Responsive Design</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">avaliable</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>design customization</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">avaliable</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Content Upload</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">avaliable</span></td>
+                            </tr>
+                            <tr class="table-cell-false">
+                                <th>E-Commerce Functionality</th>
+                                <td><i class="fas fa-times"></i><span class="sr-only sr-only-focusable">not availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Plugins</th>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr class="cell-number">
+                                <th>Number of Pages</th>
+                                <td>5</td>
+                            </tr>
+                            <tr class="cell-number">
+                                <th>Revisions</th>
+                                <td>5</td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Delivery Time</th>
+                                <td>14 days</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"><button class="table-button"><span>BUY</span><i class="fas fa-shopping-cart"></i></button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <!--Premium Table-->
+                    <table class="pricing-table" id="premium">
+                        <caption class="sr-only sr-only-focusable">Premium</caption>
+                        <thead>
+                            <tr class="table-title">
+                                <th colspan="2">Premium</th>
+                             </tr>
+                             <tr class="table-subtitle">
+                                 <th colspan="2">E-Commerce Website</th>
+                             </tr>
+                             <tr class="plan-description">
+                                 <th colspan="2">Up to 10 amazing pages website with E-Commerce</th>
+                             </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-cell-right">
+                                <th>Accessibility</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Responsive Design</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>design customization</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Content Upload</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>E-Commerce Functionality</th>
+                                <td><i class="fas fa-check"></i><span class="sr-only sr-only-focusable">availble</span></td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Plugins</th>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr class="cell-number">
+                                <th>Number of Pages</th>
+                                <td>10</td>
+                            </tr>
+                            <tr class="cell-number">
+                                <th>Revisions</th>
+                                <td>10</td>
+                            </tr>
+                            <tr class="table-cell-right">
+                                <th>Delivery Time</th>
+                                <td>20 days</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"><button class="table-button"><span>BUY</span><i class="fas fa-shopping-cart"></i></button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+         <section id="contact">
+             <h2>Contact Me</h2>
+             <div class="containerer">
+                <img src="images/contact-icon.png" alt="contact icon">
+                <p>Have an idea or a question I'll be glad to hear from you</p>
+                <div class="row">
+                    <div class="social-icons col-md order-md-last">
+                        <h3>Contact me via social media</h3>
+                        <div class="social-icons-alignment">
+                            <a href="#"><i class="fab fa-yahoo"></i><span class="sr-only sr-only-focusable">yahoo</span></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i><span class="sr-only sr-only-focusable">what's app</span></a>
+                            <a href="#"><i class="fab fa-twitter"></i><span class="sr-only sr-only-focusable">twitter</span></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i><span class="sr-only sr-only-focusable">facebook</span></a>
+                            <a href="#"><i class="fab fa-instagram"></i><span class="sr-only sr-only-focusable">instagram</span></a>
+                            <a href="#"><i class="fab fa-github"></i><span class="sr-only sr-only-focusable">github</span></a>
+                            <a href="#"><i class="fab fa-linkedin"></i><span class="sr-only sr-only-focusable">linkedin</span></a>
+                        </div>
+                    </div>
+    
+                    <div class="contact-forum-div col-md order-md-first">
+                        <h3>Contact me via Direct E-Mail</h3>
+                        <form action="#" method="post" id="contact-form">
+                        
+                            <label for="name" class="sr-only sr-only-focusable">name</label>
+                            <input type="text" name="name" placeholder="Name" id="name">
+    
+                            <label for="Email" class="sr-only sr-only-focusable">E-Mail</label>
+                            <input type="email" name="Email" placeholder="E-mail" id="Email">
+    
+                            <label for="message" class="sr-only sr-only-focusable">your message</label>            
+                            <textarea name="text" rows="10" cols="30" placeholder="Contact US" id="message"></textarea>
+                            <input type="submit" class="forum-button" value="Send Email">
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+    <footer>
+        <p>&copy; Mohamed Hany</p>
+    </footer>
+    <!--scripts-->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--three.js cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <!--main script-->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
